@@ -168,8 +168,6 @@ svg {
   color: #d0bc7a;
   margin-right: 42px;
   opacity: 1;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
 }
 
 .phone svg {
@@ -322,7 +320,7 @@ svg {
   background-color: #fff;
   width: 100vw;
   height: 100vh;
-  overflow: auto;
+  overflow: auto !important;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
@@ -638,6 +636,11 @@ svg {
   background: #f7f7f7;
   border-radius: 8px;
   position: relative;
+}
+
+.slider__item:active, .slider__item:hover, .slider__item:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 .slider__item + .slider__item {
