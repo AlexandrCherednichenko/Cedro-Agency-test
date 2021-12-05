@@ -1,0 +1,195 @@
+@media (max-width: 1210px) {
+   .nav {
+      left: 140px;
+   }
+   .phone {
+      right: 170px;
+   }
+   .profile-icon {
+      top: 18px;
+      right: 40px;
+   }
+}
+
+@media (max-width: 1030px) {
+   .logo {
+      left: 21px;
+   }
+   .nav {
+      left: 120px;
+   }
+   .nav li {
+      margin-right: 10px;
+   }
+   .phone {
+      right: 160px;
+      top: 21px;
+   }
+   .phone span {
+      display: none;
+   }
+   .burger {
+      right: 21px;
+   }
+   .content__menu {
+      padding: 50px 10px 50px 21px;
+   }
+   .profile-title {
+      padding: 50px 20px 30px 50px;
+   }
+   .profile-data,
+   .profile-password {
+      padding: 40px 20px 40px 50px;
+   }
+   .porfile-save-btn {
+      padding: 50px 20px 50px 50px;
+   }
+}
+
+@media (max-width: 850px) {
+   .phone {
+      right: 145px;
+   }
+   .profile-icon {
+      right: 25px;
+   }
+   .nav {
+      display: none;
+   }
+   .menu__items {
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 96px;
+   }
+   .menu__item {
+      margin-bottom: 40px;
+   }
+   .menu__item li:first-child {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 16px;
+   }
+   .menu__item li {
+      margin-bottom: 8px;
+   }
+   .profile-title {
+      font-size: 55px;
+      line-height: 55px;
+   }
+   .profile-data label,
+   .profile-password label {
+      width: 420px;
+   }
+   .footer {
+      padding: 64px 0px;
+   }
+   .footer__menu-items {
+      padding-top: 0px !important;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 400px;
+   }
+}
+
+@media (max-width: 630px) {
+   .content {
+      flex-direction: column;
+      border-bottom: none;
+   }
+   .content__menu {
+      width: 100%;
+      border-right: none;
+      padding: 8px 16px;
+      border-bottom: 1px solid #ebebeb;
+   }
+   .content__menu {
+      flex-direction: row;
+      position: relative;
+   }
+   .content__menu a {
+      margin-bottom: 0px;
+      margin-right: 16px;
+   }
+   .content__menu a:last-child {
+      position: absolute;
+      right: 0px;
+   }
+   .profile-title {
+      padding: 32px 16px;
+      border-bottom: none;
+      font-size: 35px;
+      line-height: 40px;
+   }
+   .profile-data {
+      padding: 0px 16px 32px 16px;
+   }
+   .profile-password {
+      padding: 32px 16px 32px 16px;
+   }
+   .profile-data h5,
+   .profile-password h5 {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 32px;
+   }
+   .profile-data label,
+   .profile-password label {
+      width: 100%;
+      margin-bottom: 16px;
+   }
+   .profile-data label p,
+   .profile-password label p {
+      margin-bottom: 8px;
+   }
+   .porfile-save-btn {
+      padding: 32px 16px 64px 16px;
+   }
+   .porfile-save-btn button {
+      width: 100%;
+   }
+
+   .trends {
+      padding: 0 0 120px 0;
+   }
+   .trends__text {
+      margin-bottom: 32px;
+      position: relative;
+   }
+   .trends__title {
+      font-size: 28px;
+      line-height: 32px;
+   }
+   .trends__catalog {
+      position: absolute;
+      top: 520px;
+   }
+   .slider .slick-track {
+      left: 16px;
+   }
+   .slider__item + .slider__item {
+      margin-left: 8px;
+   }
+}
+
+@media (max-width: 590px) {
+   .footer__menu-items {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: 620px;
+   }
+   .copyright__inner {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .copyright__inner a {
+      margin-top: 16px;
+   }
+   .footer__alert {
+      padding-top: 40px;
+   }
+}

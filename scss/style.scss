@@ -1,0 +1,57 @@
+@import "_fonts";
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+body {
+   background: #ffffff;
+   font: 400 14px/24px "TTNorms";
+   letter-spacing: 0.04em;
+   color: #21242e;
+   height: 100%;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+   &:hover {
+      color: inherit;
+   }
+}
+
+svg {
+   fill: none;
+}
+
+.wrapper {
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+.lock {
+   overflow: hidden;
+}
+.alertMess {
+   line-height: 18px;
+   color: #da7070 !important;
+   margin-top: 4px;
+   margin-bottom: 0px !important;
+}
+
+@import "_header";
+@import "_menu";
+@import "_content";
+@import "_trends";
+@import "_slider";
+@import "_footer";

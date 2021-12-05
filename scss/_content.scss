@@ -1,0 +1,114 @@
+.content {
+   display: flex;
+   border-bottom: 1px solid #ebebeb;
+
+   &__menu {
+      display: flex;
+      flex-direction: column;
+      width: 272px;
+      padding: 112px 20px 112px 80px;
+      border-right: 1px solid #ebebeb;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      a {
+         margin-bottom: 12px;
+         &:hover {
+            color: #d0bc7a;
+         }
+      }
+   }
+
+   &__info {
+      width: 100%;
+   }
+}
+.your-profile {
+}
+.profile-title {
+   font-size: 80px;
+   text-transform: uppercase;
+   line-height: 80px;
+   padding: 112px 40px 80px 95px;
+   border-bottom: 1px solid #ebebeb;
+}
+.profile-data,
+.profile-password {
+   display: flex;
+   flex-direction: column;
+   padding: 80px 40px 80px 95px;
+   border-bottom: 1px solid #ebebeb;
+}
+.profile-data h5,
+.profile-password h5 {
+   font-size: 24px;
+   line-height: 24px;
+   margin-bottom: 48px;
+}
+.profile-data label,
+.profile-password label {
+   position: relative;
+   margin-bottom: 24px;
+   width: 544px;
+   &:last-child {
+      margin-bottom: 0px;
+   }
+   p {
+      color: rgba(33, 36, 46, 0.4);
+      margin-bottom: 12px;
+   }
+   input {
+      background: #f7f7f7;
+      backdrop-filter: blur(4px);
+      border: none;
+      border-radius: 4px;
+      padding: 16px;
+      width: 100%;
+      height: 56px;
+      cursor: pointer;
+      &::placeholder {
+         color: rgba(33, 36, 46, 0.4);
+      }
+      &:hover {
+         &::placeholder {
+            color: rgba(33, 36, 46, 0.8);
+         }
+      }
+      &.incorrect {
+         &::placeholder {
+            transition: 0.3s all;
+            color: #da7070;
+         }
+      }
+   }
+}
+.password-control {
+   position: absolute;
+   top: 52px;
+   right: 16px;
+   display: inline-block;
+   width: 24px;
+   height: 24px;
+   background: url("../image/show.svg") 0 0 no-repeat;
+   opacity: 0.4;
+   &:hover {
+      opacity: 1;
+   }
+   &.hide {
+      background: url("../image/hide.svg") 0 0 no-repeat;
+   }
+}
+
+.porfile-save-btn {
+   padding: 80px 40px 112px 95px;
+   button {
+      padding: 16px 32px;
+      color: #fff;
+      background: #21242e;
+      border: none;
+      border-radius: 4px;
+      transition: 0.3s all;
+      &:hover {
+         background-color: #d0bc7a;
+      }
+   }
+}

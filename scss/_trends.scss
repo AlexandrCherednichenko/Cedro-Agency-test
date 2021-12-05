@@ -1,0 +1,38 @@
+.trends {
+   padding: 112px 0px;
+   &__text {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 48px;
+   }
+
+   &__title {
+      font-size: 48px;
+      line-height: 56px;
+      text-transform: uppercase;
+      span {
+         color: #d0bc7a;
+      }
+   }
+
+   &__catalog {
+      display: flex;
+      align-items: center;
+      line-height: 14px;
+      svg,
+      use {
+         width: 16px;
+         height: 16px;
+         margin-left: 8px;
+         stroke: #21242e;
+         stroke-width: 1.5;
+      }
+      &:hover {
+         color: #d0bc7a;
+         svg,
+         use {
+            stroke: #d0bc7a;
+         }
+      }
+   }
+}
