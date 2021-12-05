@@ -5,6 +5,12 @@
       background: #f7f7f7;
       border-radius: 8px;
       position: relative;
+      &:active,
+      &:hover,
+      &:focus {
+         outline: 0;
+         outline-offset: 0;
+      }
       & + .slider__item {
          margin-left: 32px;
       }
