@@ -19,6 +19,7 @@
       display: flex;
       align-items: center;
       line-height: 14px;
+      transition: 0.3s all;
       svg,
       use {
          width: 16px;
@@ -26,6 +27,7 @@
          margin-left: 8px;
          stroke: #21242e;
          stroke-width: 1.5;
+         transition: 0.3s all;
       }
       &:hover {
          color: #d0bc7a;

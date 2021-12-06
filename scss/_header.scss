@@ -4,7 +4,7 @@
    position: relative;
    z-index: 20;
    background-color: #fff;
-   &.active {
+   &.js-active {
       border: none;
       .nav,
       .phone,
@@ -31,18 +31,18 @@
    position: absolute;
    top: 16px;
    left: 228px;
+   opacity: 1;
+   transition: 0.5s all;
    &__menu {
       display: flex;
       text-transform: uppercase;
    }
-
    li {
       margin-right: 16px;
       &:last-child {
          margin-right: 0;
       }
    }
-
    &__menu-link {
       display: flex;
       align-items: center;
@@ -56,6 +56,7 @@
       }
       &:hover {
          color: #d0bc7a;
+         transition: 0.3s all;
          .arrow-down {
             border-color: #d0bc7a;
          }
@@ -71,12 +72,14 @@
    color: #d0bc7a;
    margin-right: 42px;
    opacity: 1;
+   transition: 0.3s all;
    svg {
       width: 14px;
       height: 14px;
       margin-right: 10px;
       stroke: #d0bc7a;
       stroke-width: 1.5;
+      transition: 0.3s all;
    }
    &:hover {
       color: #21242e;
@@ -105,6 +108,7 @@
       height: 14px;
       stroke: #d0bc7a;
       stroke-width: 1.5;
+      transition: 0.3s all;
    }
    &:hover {
       svg {
@@ -119,6 +123,7 @@
       height: 15px;
       stroke: #d0bc7a;
       stroke-width: 1.5;
+      transition: 0.3s all;
    }
    &:hover {
       svg {
@@ -139,6 +144,7 @@
       position: absolute;
       top: -2px;
       right: -7px;
+      display: none;
    }
 }
 .basket {
@@ -147,6 +153,7 @@
       height: 15px;
       stroke: #d0bc7a;
       stroke-width: 1.5;
+      transition: 0.3s all;
    }
    &:hover {
       svg {
@@ -159,6 +166,7 @@
       width: 12px;
       height: 14px;
       fill: #d0bc7a;
+      transition: 0.3s all;
    }
    &:hover {
       svg {
@@ -195,8 +203,7 @@
          background-color: #d0bc7a;
       }
    }
-
-   &.active {
+   &.js-active {
       &::before {
          transform: rotate(45deg);
          top: 11px;

@@ -12,6 +12,7 @@
       letter-spacing: 0.04em;
       a {
          margin-bottom: 12px;
+         transition: 0.3s all;
          &:hover {
             color: #d0bc7a;
          }
@@ -67,13 +68,14 @@
       cursor: pointer;
       &::placeholder {
          color: rgba(33, 36, 46, 0.4);
+         transition: 0.3s all;
       }
       &:hover {
          &::placeholder {
             color: rgba(33, 36, 46, 0.8);
          }
       }
-      &.incorrect {
+      &.js-incorrect {
          &::placeholder {
             transition: 0.3s all;
             color: #da7070;

@@ -7,10 +7,10 @@ const burgerMenu = () => {
       header = document.querySelector('.header');
 
    burger.addEventListener('click', () => {
-      burger.classList.toggle('active');
-      menu.classList.toggle('active');
-      body.classList.toggle('lock');
-      header.classList.toggle('active');
+      burger.classList.toggle('js-active');
+      menu.classList.toggle('js-active');
+      header.classList.toggle('js-active');
+      body.classList.toggle('js-lock');
    });
 
 };
@@ -103,13 +103,13 @@ const submitForm = () => {
    const input = document.querySelectorAll('.your-profile input');
 
    let p = document.createElement('p');
-   p.className = "alertMess";
+   p.className = "js-alertMess";
    p.innerHTML = "Это обязательное поле";
 
    input.forEach(elem => {
       elem.onblur = () => {
          if (elem.value === '') {
-            elem.classList.add('incorrect');
+            elem.classList.add('js-incorrect');
             elem.after(p);
             setTimeout(() => p.remove(), 3000);
          } else {

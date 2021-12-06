@@ -60,11 +60,11 @@ svg {
   padding: 0 10px;
 }
 
-.lock {
+.js-lock {
   overflow: hidden;
 }
 
-.alertMess {
+.js-alertMess {
   line-height: 18px;
   color: #da7070 !important;
   margin-top: 4px;
@@ -79,13 +79,13 @@ svg {
   background-color: #fff;
 }
 
-.header.active {
+.header.js-active {
   border: none;
 }
 
-.header.active .nav,
-.header.active .phone,
-.header.active .profile-icon {
+.header.js-active .nav,
+.header.js-active .phone,
+.header.js-active .profile-icon {
   opacity: 0;
 }
 
@@ -111,6 +111,9 @@ svg {
   position: absolute;
   top: 16px;
   left: 228px;
+  opacity: 1;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
 .nav__menu {
@@ -149,6 +152,8 @@ svg {
 
 .nav__menu-link:hover {
   color: #d0bc7a;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .nav__menu-link:hover .arrow-down {
@@ -168,6 +173,8 @@ svg {
   color: #d0bc7a;
   margin-right: 42px;
   opacity: 1;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .phone svg {
@@ -176,6 +183,8 @@ svg {
   margin-right: 10px;
   stroke: #d0bc7a;
   stroke-width: 1.5;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .phone:hover {
@@ -211,6 +220,8 @@ svg {
   height: 14px;
   stroke: #d0bc7a;
   stroke-width: 1.5;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .search:hover svg {
@@ -226,6 +237,8 @@ svg {
   height: 15px;
   stroke: #d0bc7a;
   stroke-width: 1.5;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .favorites:hover svg {
@@ -246,6 +259,7 @@ svg {
   position: absolute;
   top: -2px;
   right: -7px;
+  display: none;
 }
 
 .basket svg {
@@ -253,6 +267,8 @@ svg {
   height: 15px;
   stroke: #d0bc7a;
   stroke-width: 1.5;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .basket:hover svg {
@@ -263,6 +279,8 @@ svg {
   width: 12px;
   height: 14px;
   fill: #d0bc7a;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .private:hover svg {
@@ -301,13 +319,13 @@ svg {
   background-color: #d0bc7a;
 }
 
-.burger.active::before {
+.burger.js-active::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 11px;
 }
 
-.burger.active::after {
+.burger.js-active::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   bottom: 12px;
@@ -325,7 +343,7 @@ svg {
   transition: 0.5s all;
 }
 
-.menu.active {
+.menu.js-active {
   top: 0px;
 }
 
@@ -404,6 +422,8 @@ svg {
 
 .content__menu a {
   margin-bottom: 12px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .content__menu a:hover {
@@ -476,21 +496,29 @@ svg {
 .profile-data label input::-webkit-input-placeholder,
 .profile-password label input::-webkit-input-placeholder {
   color: rgba(33, 36, 46, 0.4);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .profile-data label input:-ms-input-placeholder,
 .profile-password label input:-ms-input-placeholder {
   color: rgba(33, 36, 46, 0.4);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .profile-data label input::-ms-input-placeholder,
 .profile-password label input::-ms-input-placeholder {
   color: rgba(33, 36, 46, 0.4);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .profile-data label input::placeholder,
 .profile-password label input::placeholder {
   color: rgba(33, 36, 46, 0.4);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .profile-data label input:hover::-webkit-input-placeholder,
@@ -513,29 +541,29 @@ svg {
   color: rgba(33, 36, 46, 0.8);
 }
 
-.profile-data label input.incorrect::-webkit-input-placeholder,
-.profile-password label input.incorrect::-webkit-input-placeholder {
+.profile-data label input.js-incorrect::-webkit-input-placeholder,
+.profile-password label input.js-incorrect::-webkit-input-placeholder {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   color: #da7070;
 }
 
-.profile-data label input.incorrect:-ms-input-placeholder,
-.profile-password label input.incorrect:-ms-input-placeholder {
+.profile-data label input.js-incorrect:-ms-input-placeholder,
+.profile-password label input.js-incorrect:-ms-input-placeholder {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   color: #da7070;
 }
 
-.profile-data label input.incorrect::-ms-input-placeholder,
-.profile-password label input.incorrect::-ms-input-placeholder {
+.profile-data label input.js-incorrect::-ms-input-placeholder,
+.profile-password label input.js-incorrect::-ms-input-placeholder {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   color: #da7070;
 }
 
-.profile-data label input.incorrect::placeholder,
-.profile-password label input.incorrect::placeholder {
+.profile-data label input.js-incorrect::placeholder,
+.profile-password label input.js-incorrect::placeholder {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
   color: #da7070;
@@ -610,6 +638,8 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   line-height: 14px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .trends__catalog svg,
@@ -619,6 +649,8 @@ svg {
   margin-left: 8px;
   stroke: #21242e;
   stroke-width: 1.5;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .trends__catalog:hover {
@@ -752,7 +784,7 @@ svg {
 }
 
 .footer__menu-items {
-  height: 344px;
+  height: 232px;
 }
 
 .footer__menu-item {
@@ -817,6 +849,8 @@ svg {
 
 .copyright__title {
   opacity: 0.4;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .copyright__title:hover {
@@ -831,6 +865,8 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   opacity: 0.4;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .copyright__dev svg {
